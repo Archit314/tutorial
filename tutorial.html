@@ -1,28 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutorial</title>
+    <link rel="stylesheet" href="frontendcss.css">
     <style>
-        body{
-            background-color: #561e43
-        }
-        h2{
-            border: 2px solid white;
-            border-radius: 25px;
-            text-align: center;
-            margin: 25px;
-            padding: 25px;
-            text-shadow: 2px 2px 5px black;
-            font-size: 40px;
-            color: pink;
+       /* body {
+            background-color: #561e43;
             font-family: 'Fira Code', monospace;
         }
+
+        h3 {
+            font-size: 50px;
+            color: pink;
+            padding-left: 35%;
+            padding-right: 28%;
+            text-transform: capitalize;
+            line-height: 0.2%;
+            
+        }
+
+        .para1 {
+            font-size: 20px;
+            
+            padding-left: 28%;
+            padding-right: 28%;
+            color: pink;
+            
+            text-indent: 60px;
+        }
+
+        table,
+        th,
+        td,
+        tr {
+            border: 1px solid pink;
+            color: pink;
+            border-spacing: 5px;
+        }
+
+        th,
+        td {
+            text-align: center;
+            font-size: 35px;
+            
+            border-radius: 5px;
+            height: 50px;
+            width: 150px;
+        }
+
+        div {
+            margin-left: 30%;
+            margin-bottom: 5%;
+        }
+
+        h5 {
+            padding-left: 27%;
+            padding-right: 28%;
+            font-size: 35px;
+            color: pink;
+            text-indent: 15px;
+            
+        }
+
+        img {
+            width: 8%;
+            height: 8%;
+            padding-left: 45%;
+            background-attachment: fixed;
+            
+        }*/
+        
     </style>
 </head>
-<body> 
-    <h2 class="div1">TUTORIAL</h2>
+
+<body>
+    <!-- <h2 class="div1">TUTORIAL</h2> -->
+    <img src="Logo.svg" alt="boolviz">
+    <h3>Logical Gates</h3>
+    <h5>1. AND Gate :</h5>
+    <p class="para1">An AND gate is a logic gate having two or more inputs and a single output. An AND gate operates on
+        logical
+        multiplication rules. In this gate, if either of the inputs is low (0), then the output is also low. If all of
+        the inputs are high (1), then the output will also be high. An AND gate can have any number of inputs, although
+        2 input and 3 input AND gates are the most common. <br> There are two binary digits 0 and 1. We just told that
+        an AND gate performs a binary multiplication of binary digits. In multiplying 0 with 0 we will get 0, 1 with 0
+        or 0 with 1 we will get 0. Only we get 1 when 1 is multiplied by 1.
+        In other words, an AND gate is a digital device that produces high output only when all inputs are high and
+        produces low output under all other inputs conditions. A high digital signal means logically 1 and a low digital
+        signal means logically 0.</p>
+        <!-- div block for truth table of AND gate  -->
+    <div class="div1">
+        <table id="table">
+            <caption style="font-size: 20px;">Truth Table</caption>
+            <tr>
+                <th>
+                    A
+                </th>
+                <th>
+                    B
+                </th>
+                <th>
+                    A AND B
+                </th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </div>
+    <h5>2. OR Gate :</h5>
+    <p class="para1">An OR gate is a digital circuit that has two or more inputs and produces an output, which is the logical OR of all those inputs. This logical OR is represented with the symbol ‘+’. <br> The following table shows the truth table of 2-input OR gate.</p>
+    <!-- div block for truth table of or gate  -->
+    <div class="div1">
+        <table id="table">
+            <caption style="font-size: 20px;">Truth Table</caption>
+            <tr>
+                <th>
+                    A
+                </th>
+                <th>
+                    B
+                </th>
+                <th>
+                    A OR B
+                </th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </div>
+    <p class="para1">Here A, B are the inputs and Y is the output of two input OR gate. If both inputs are ‘0’, then only the output, Y is ‘0’. For remaining combinations of inputs, the output, Y is ‘1’.</p>
+    <h5>3. NOT Gate :</h5>
+    <p class="para1">A NOT gate is a digital circuit that has single input and single output. The output of NOT gate is the logical inversion of input. Hence, the NOT gate is also called as inverter. <br> The following table shows the truth table of NOT gate.</p>
+    <div class="div1">
+        <table id="table">
+            <caption style="font-size: 20px;">Truth Table</caption>
+            <tr>
+                <th>
+                    A
+                </th>
+                <th>
+                    A'
+                </th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </div>
 </body>
+
 </html>
