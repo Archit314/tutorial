@@ -1,0 +1,76 @@
+body {
+    background-color: #561e43;
+    font-family: 'Fira Code', monospace;
+}
+
+/*h2 {
+    border: 2px solid white;
+    border-radius: 25px;
+    text-align: center;
+    margin: 25px;
+    padding: 25px;
+    text-shadow: 2px 2px 5px black;
+    font-size: 40px;
+    color: pink;
+}*/
+
+h3 {
+    font-size: 50px;
+    color: pink;
+    padding-left: 35%;
+    padding-right: 28%;
+    text-transform: capitalize;
+    line-height: 0.2%;
+    /* text-indent: 60px; */
+}
+
+.para1 {
+    font-size: 20px;
+    /* margin: 20px; */
+    padding-left: 28%;
+    padding-right: 28%;
+    color: pink;
+    /* text-align: justify; */
+    text-indent: 60px;
+}
+
+table,
+th,
+td,
+tr {
+    border: 1px solid pink;
+    color: pink;
+    border-spacing: 5px;
+}
+
+th,
+td {
+    text-align: center;
+    font-size: 35px;
+    /* padding: 15px; */
+    border-radius: 5px;
+    height: 50px;
+    width: 150px;
+}
+
+.div1{
+    margin-left: 30%;
+    margin-bottom: 5%;
+}
+
+h5 {
+    padding-left: 27%;
+    padding-right: 28%;
+    font-size: 35px;
+    color: pink;
+    text-indent: 15px;
+    /* line-height: 0.2%; */
+}
+
+img {
+    width: 8%;
+    height: 8%;
+    padding-left: 45%;
+    background-attachment: fixed;
+    /* padding: 30px; */
+}
